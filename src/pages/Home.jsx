@@ -1,6 +1,8 @@
 import React from 'react'
 import eu from "../assets/eu.png"
 
+import { Link } from "react-router-dom"
+
 const Home = () => {
   return (
     <section className="-mt-2">
@@ -38,13 +40,21 @@ const Home = () => {
 
           {/* BOTÕES */}
           <div className="mt-10 flex flex-wrap gap-4">
-            <button className="rounded-2xl bg-nav-link px-6 py-3 text-white transition hover:opacity-90">
+            <Link
+              to="/projects"
+              className="rounded-2xl bg-nav-link px-6 py-3 text-white transition hover:opacity-90"
+            >
               Ver projetos
-            </button>
+            </Link>
 
-            <button className="rounded-2xl border border-primary-text/20 px-6 py-3 text-primary-text transition hover:border-nav-link hover:text-nav-link">
-              Contato
-            </button>
+            <a
+              href="https://wa.me/5519984246161?text=Olá%20Wesley,%20vi%20seu%20portfólio%20e%20quero%20conversar."
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-2xl border border-primary-text/20 px-6 py-3 text-primary-text transition hover:border-nav-link hover:text-nav-link"
+            >
+              Falar no WhatsApp
+            </a>
           </div>
         </div>
 
