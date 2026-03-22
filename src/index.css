@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #f5f4fc;
+  --color-primary-text: #474747;
+  --color-nav-link: #4831d4;
+  --color-menu-bg: #ffffff;
+}
+
+html {
+  overflow-y: scroll;
+}
