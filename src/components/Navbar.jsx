@@ -76,54 +76,55 @@ function Navbar() {
       </div>
 
       {menuOpen && (
-        <div className="fixed inset-0 z-50 bg-menu-bg md:hidden">
-          <div className="flex h-full flex-col px-6 py-6">
-            <div className="flex items-center justify-between">
-              <h2 className="text-3xl font-semibold tracking-tight text-nav-link">
-                WA.
-              </h2>
+        <div className="absolute left-0 top-full z-50 w-full bg-menu-bg py-10 shadow-md md:hidden">
+          <div className="flex flex-col items-center justify-center gap-8 text-xl">
+            <NavLink
+              to="/"
+              onClick={() => setMenuOpen(false)}
+              className={({ isActive }) =>
+                isActive
+                  ? "font-medium text-nav-link"
+                  : "text-primary-text transition hover:text-nav-link"
+              }
+            >
+              Home
+            </NavLink>
 
-              <button
-                onClick={() => setMenuOpen(false)}
-                className="text-4xl leading-none text-primary-text"
-              >
-                ×
-              </button>
-            </div>
+            <NavLink
+              to="/projects"
+              onClick={() => setMenuOpen(false)}
+              className={({ isActive }) =>
+                isActive
+                  ? "font-medium text-nav-link"
+                  : "text-primary-text transition hover:text-nav-link"
+              }
+            >
+              Projetos
+            </NavLink>
 
-            <div className="flex flex-1 flex-col items-center justify-center gap-8 text-2xl">
-              <NavLink
-                to="/"
-                onClick={() => setMenuOpen(false)}
-                className="text-nav-link transition hover:opacity-70"
-              >
-                Home
-              </NavLink>
+            <NavLink
+              to="/about"
+              onClick={() => setMenuOpen(false)}
+              className={({ isActive }) =>
+                isActive
+                  ? "font-medium text-nav-link"
+                  : "text-primary-text transition hover:text-nav-link"
+              }
+            >
+              Sobre
+            </NavLink>
 
-              <NavLink
-                to="/projects"
-                onClick={() => setMenuOpen(false)}
-                className="text-nav-link transition hover:opacity-70"
-              >
-                Projetos
-              </NavLink>
-
-              <NavLink
-                to="/about"
-                onClick={() => setMenuOpen(false)}
-                className="text-nav-link transition hover:opacity-70"
-              >
-                Sobre
-              </NavLink>
-
-              <NavLink
-                to="/contact"
-                onClick={() => setMenuOpen(false)}
-                className="text-nav-link transition hover:opacity-70"
-              >
-                Contato
-              </NavLink>
-            </div>
+            <NavLink
+              to="/contact"
+              onClick={() => setMenuOpen(false)}
+              className={({ isActive }) =>
+                isActive
+                  ? "font-medium text-nav-link"
+                  : "text-primary-text transition hover:text-nav-link"
+              }
+            >
+              Contato
+            </NavLink>
           </div>
         </div>
       )}
