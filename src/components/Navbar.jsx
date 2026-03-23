@@ -76,39 +76,54 @@ function Navbar() {
       </div>
 
       {menuOpen && (
-        <div className="absolute left-0 top-full z-50 w-full border-b border-black/10 bg-menu-bg px-6 py-6 md:hidden">
-          <div className="flex flex-col gap-5">
-            <NavLink
-              to="/"
-              onClick={() => setMenuOpen(false)}
-              className="text-nav-link"
-            >
-              Home
-            </NavLink>
+        <div className="fixed inset-0 z-50 bg-menu-bg md:hidden">
+          <div className="flex h-full flex-col px-6 py-6">
+            <div className="flex items-center justify-between">
+              <h2 className="text-3xl font-semibold tracking-tight text-nav-link">
+                WA.
+              </h2>
 
-            <NavLink
-              to="/projects"
-              onClick={() => setMenuOpen(false)}
-              className="text-nav-link"
-            >
-              Projetos
-            </NavLink>
+              <button
+                onClick={() => setMenuOpen(false)}
+                className="text-4xl leading-none text-primary-text"
+              >
+                ×
+              </button>
+            </div>
 
-            <NavLink
-              to="/about"
-              onClick={() => setMenuOpen(false)}
-              className="text-nav-link"
-            >
-              Sobre
-            </NavLink>
+            <div className="flex flex-1 flex-col items-center justify-center gap-8 text-2xl">
+              <NavLink
+                to="/"
+                onClick={() => setMenuOpen(false)}
+                className="text-nav-link transition hover:opacity-70"
+              >
+                Home
+              </NavLink>
 
-            <NavLink
-              to="/contact"
-              onClick={() => setMenuOpen(false)}
-              className="text-nav-link"
-            >
-              Contato
-            </NavLink>
+              <NavLink
+                to="/projects"
+                onClick={() => setMenuOpen(false)}
+                className="text-nav-link transition hover:opacity-70"
+              >
+                Projetos
+              </NavLink>
+
+              <NavLink
+                to="/about"
+                onClick={() => setMenuOpen(false)}
+                className="text-nav-link transition hover:opacity-70"
+              >
+                Sobre
+              </NavLink>
+
+              <NavLink
+                to="/contact"
+                onClick={() => setMenuOpen(false)}
+                className="text-nav-link transition hover:opacity-70"
+              >
+                Contato
+              </NavLink>
+            </div>
           </div>
         </div>
       )}
