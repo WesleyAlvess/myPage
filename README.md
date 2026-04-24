@@ -4,9 +4,9 @@
 
 TaskFlow is a full stack task management application built to demonstrate real-world development skills.
 
-The app allows users to manage tasks with authentication, create and organize workflows, and interact with a complete backend API.
+The application allows users to manage tasks with authentication, interact with a REST API and use a responsive interface.
 
-This project showcases my ability to build and deploy a full stack application using modern technologies.
+This project showcases my ability to build and deploy a complete full stack application using modern technologies.
 
 ---
 
@@ -49,7 +49,7 @@ This project showcases my ability to build and deploy a full stack application u
 
 - Building authentication with JWT
 - Creating REST APIs with Node.js and Express
-- Managing state in React using Context API
+- Managing global state with Context API
 - Connecting frontend and backend
 - Handling file uploads (avatar)
 - Deploying full stack applications (Netlify + Render)
@@ -58,5 +58,34 @@ This project showcases my ability to build and deploy a full stack application u
 
 ## ⚙️ Installation
 
-```bash
+Clone the repository:
+
 git clone https://github.com/WesleyAlvess/task-manager-fullstack.git
+
+Navigate to the project folder:
+
+cd task-manager-fullstack
+
+Install dependencies:
+
+npm install
+
+Run the project:
+
+npm run dev
+
+---
+
+## 📈 Future Improvements
+
+- Email notifications
+- Task categories
+- Drag & drop tasks
+- Real-time updates
+
+---
+
+## 👨‍💻 Author
+
+Wesley Alves  
+Full Stack Developer (React + Node.js)
