@@ -78,10 +78,9 @@ npm run dev
 
 ## 📈 Future Improvements
 
-- Email notifications
-- Task categories
-- Drag & drop tasks
-- Real-time updates
+- UI/UX improvements
+- Additional task filters
+- Performance optimizations
 
 ---
 
