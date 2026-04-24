@@ -1,16 +1,62 @@
-# React + Vite
+# 🚀 TaskFlow — Full Stack Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 About the Project
 
-Currently, two official plugins are available:
+TaskFlow is a full stack task management application built to demonstrate real-world development skills.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The app allows users to manage tasks with authentication, create and organize workflows, and interact with a complete backend API.
 
-## React Compiler
+This project showcases my ability to build and deploy a full stack application using modern technologies.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🔥 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👉 https://tasksmanagerw.netlify.app
+
+---
+
+## 🚀 Features
+
+- Authentication with JWT (Register & Login)
+- Full CRUD for tasks
+- Mark tasks as completed
+- Task filtering (all, pending, completed)
+- User profile with avatar upload
+- Responsive UI (mobile-first)
+- REST API integration
+- Deployed frontend and backend
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- React
+- Tailwind CSS
+- Context API
+
+### Backend
+- Node.js
+- Express
+
+### Database
+- MongoDB
+
+---
+
+## 🎯 What I Learned
+
+- Building authentication with JWT
+- Creating REST APIs with Node.js and Express
+- Managing state in React using Context API
+- Connecting frontend and backend
+- Handling file uploads (avatar)
+- Deploying full stack applications (Netlify + Render)
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/WesleyAlvess/task-manager-fullstack.git
